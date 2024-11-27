@@ -35,10 +35,7 @@ export function usePractitionersList(filterValues: ColumnFilterValue[] | undefin
     >('Practitioner', queryParameters, debouncedFilterValues);
 
     const [practitionerDataListRD] = useService<PractitionerListRowData[]>(async () => {
-        const practitionersResponse = mapSuccess(
-            resourceResponse,
-            (bundle) => extractBundleResources(bundle).Practitioner,
-        );
+        const practitionersResponse = mapSuccess(resourceResponse,(bundle) => extractBundleResources(bundle).Practitioner,);
         const practitioners = isSuccess(practitionersResponse) ? practitionersResponse.data : [];
 
         const filteredResourcesAreFound = !practitionerFilterValue || practitioners.length > 0;

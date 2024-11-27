@@ -32,11 +32,11 @@ export function formatOAuthState(state: OAuthState) {
 
 export function getAuthorizeUrl(state?: OAuthState) {
     const stateStr = state ? `&state=${formatOAuthState(state)}` : '';
-
     return `${config.baseURL}/auth/authorize?client_id=${config.clientId}&response_type=token${stateStr}`;
 }
 
 export function getToken() {
+
     return window.localStorage.getItem('token') || undefined;
 }
 
@@ -58,7 +58,7 @@ type TokenResponse = {
 } & Token;
 
 export async function login(data: LoginBody) {
-    return await service<TokenResponse>({
+    return await service<TokenResponse>({ 
         baseURL: config.baseURL,
         url: '/auth/token',
         method: 'POST',

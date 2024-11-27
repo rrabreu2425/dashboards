@@ -15,6 +15,7 @@ import { QuestionnairesIcon } from 'src/icons/menu/QuestionnairesIcon';
 import { ServicesIcon } from 'src/icons/menu/ServicesIcon';
 import { getToken } from 'src/services/auth';
 import { Role, matchCurrentUserRole } from 'src/utils/role';
+import { IoHome } from "react-icons/io5"
 
 import s from './SidebarTop.module.scss';
 import { S } from './SidebarTop.styles';
@@ -40,29 +41,30 @@ export function SidebarTop(props: Props) {
     const { collapsed, onItemClick, ...other } = props;
     const navigate = useNavigate();
 
-    const menuItems: RouteItem[] = !isAnonymousUser
-        ? matchCurrentUserRole({
-              [Role.Admin]: () => [
-                  { label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> },
-                  { label: t`Services`, path: '/healthcare-services', icon: <ServicesIcon /> },
-                  { label: t`Encounters`, path: '/encounters', icon: <EncountersIcon /> },
-                  { label: t`Patients`, path: '/patients', icon: <PatientsIcon /> },
-                  { label: t`Practitioners`, path: '/practitioners', icon: <PractitionersIcon /> },
-                  { label: t`Questionnaires`, path: '/questionnaires', icon: <QuestionnairesIcon /> },
-              ],
-              [Role.Practitioner]: () => [
-                  { label: t`Encounters`, path: '/encounters', icon: <EncountersIcon /> },
-                  { label: t`Patients`, path: '/patients', icon: <PatientsIcon /> },
-                  { label: t`Questionnaires`, path: '/questionnaires', icon: <QuestionnairesIcon /> },
-              ],
-              [Role.Patient]: () => [{ label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> }],
-              [Role.Receptionist]: () => [
-                  { label: t`Scheduling`, path: '/scheduling', icon: <EncountersIcon /> },
-                  { label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> },
-                  { label: t`Medications`, path: '/medications', icon: <MedicationsIcon /> },
-                  { label: t`Prescriptions`, path: '/prescriptions', icon: <PrescriptionsIcon /> },
-              ],
-          })
+    const menuItems: RouteItem[] = !isAnonymousUser ? matchCurrentUserRole({
+        [Role.Admin]: () => [
+            { label: t`Home`, path: '/home', icon: <IoHome /> },
+            { label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> },
+            { label: t`Services`, path: '/healthcare-services', icon: <ServicesIcon /> },
+            { label: t`Encounters`, path: '/encounters', icon: <EncountersIcon /> },
+            { label: t`Patients`, path: '/patients', icon: <PatientsIcon /> },
+            { label: t`Practitioners`, path: '/practitioners', icon: <PractitionersIcon /> },
+            { label: t`Questionnaires`, path: '/questionnaires', icon: <QuestionnairesIcon /> },
+        ],
+        [Role.Practitioner]: () => [
+            { label: t`Home`, path: '/home', icon: <IoHome /> },
+            { label: t`Encounters`, path: '/encounters', icon: <EncountersIcon /> },
+            { label: t`Patients`, path: '/patients', icon: <PatientsIcon /> },
+            { label: t`Questionnaires`, path: '/questionnaires', icon: <QuestionnairesIcon /> },
+        ],
+        [Role.Patient]: () => [{ label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> }],
+        [Role.Receptionist]: () => [
+            { label: t`Scheduling`, path: '/scheduling', icon: <EncountersIcon /> },
+            { label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> },
+            { label: t`Medications`, path: '/medications', icon: <MedicationsIcon /> },
+            { label: t`Prescriptions`, path: '/prescriptions', icon: <PrescriptionsIcon /> },
+        ],
+    })
         : [];
 
     const activeMenu = `/${location.pathname.split('/')[1]}`;

@@ -65,12 +65,10 @@ const columns: ColumnsType<Questionnaire> = [
 ];
 
 export function QuestionnaireList() {
-    const { columnsFilterValues, onChangeColumnFilter, onResetFilters } = useSearchBar({
-        columns: getQuestionnaireListSearchBarColumns(),
+    const { columnsFilterValues, onChangeColumnFilter, onResetFilters } = useSearchBar({columns: getQuestionnaireListSearchBarColumns(),
     });
 
     const { pagination, questionnaireListRD, handleTableChange } = useQuestionnaireList(columnsFilterValues);
-
     return (
         <>
             <BasePageHeader style={{ paddingTop: 40, paddingBottom: 92 }}>

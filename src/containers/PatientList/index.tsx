@@ -45,10 +45,13 @@ export function PatientList() {
         },
     });
 
+   //console.log(queryParameters)
+
     const { patientsResponse, pagerManager, pagination, handleTableChange } = usePatientList(
         columnsFilterValues,
         queryParameters,
     );
+    console.log(pagerManager.reload)
 
     return (
         <>

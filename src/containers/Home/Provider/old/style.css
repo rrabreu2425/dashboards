@@ -1,0 +1,1546 @@
+.home {
+    background-color: #f0f0f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .home .div {
+    background-color: var(--e-health-dashboard-1-secondary-light-grey);
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .home .auto-layout-vertical {
+    display: inline-flex;
+    flex-direction: column;
+    height: 893px;
+    align-items: flex-start;
+    gap: 24px;
+    position: absolute;
+    top: 102px;
+    left: 14px;
+  }
+  
+  .home .welcome-dr-alfonso {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .text-wrapper {
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: #003049;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+  
+  .home .span {
+    font-weight: 700;
+  }
+  
+  .home .auto-layout {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 39px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: -3.00px;
+  }
+  
+  .home .group {
+    position: relative;
+    width: 795px;
+    height: 823px;
+  }
+  
+  .home .auto-layout-wrapper {
+    position: absolute;
+    width: 328px;
+    height: 466px;
+    top: 356px;
+    left: 0;
+    box-shadow: var(--e-health-dashboard-card-shadow);
+  }
+  
+  .home .auto-layout-vertical-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    position: relative;
+    background-color: var(--e-health-dashboard-1-neutrals-base-white);
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .home .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .home .auto-layout-vertical-2 {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 466px;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .home .auto-layout-vertical-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 8px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .home .auto-layout-vertical-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-bottom: -70.00px;
+  }
+  
+  .home .frame {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 95px;
+  }
+  
+  .home .auto-layout-vertical-5 {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .home .auto-layout-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .vector {
+    position: relative;
+    width: 9px;
+    height: 6px;
+  }
+  
+  .home .group-2 {
+    position: relative;
+    width: 111px;
+    height: 19px;
+    margin-right: -2.00px;
+  }
+  
+  .home .text-wrapper-3 {
+    position: absolute;
+    top: 0;
+    left: 19px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 600;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 14px;
+    letter-spacing: -0.39px;
+    line-height: normal;
+  }
+  
+  .home .img {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 1px;
+    left: 0;
+  }
+  
+  .home .auto-layout-4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .img-2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .home .auto-layout-vertical-6 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-neutrals-neutrals600);
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-weight: 700;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 15px;
+    line-height: normal;
+    font-family: "Open Sans", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .home .auto-layout-5 {
+    display: inline-flex;
+    height: 65px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 6px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--e-health-dashboard-1-primary-primary);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .home .auto-layout-vertical-7 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: -5.00px;
+  }
+  
+  .home .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-neutrals-base-white);
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    font-weight: 700;
+    color: var(--e-health-dashboard-1-neutrals-base-white);
+    font-size: 15px;
+    line-height: normal;
+    font-family: "Open Sans", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .home .ellipse {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 43px;
+    left: 28px;
+    background-color: var(--e-health-dashboard-1-neutrals-base-white);
+    border-radius: 2px;
+  }
+  
+  .home .auto-layout-6 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20px;
+    align-items: flex-start;
+    gap: 11px 0px;
+    position: relative;
+  }
+  
+  .home .auto-layout-vertical-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0px 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-vertical-9 {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-7 {
+    display: flex;
+    width: 304px;
+    gap: 10px;
+    padding: 8px 0px;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .group-wrapper {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-color: var(--e-health-dashboard-1-primary-primary);
+    border-radius: 8px;
+  }
+  
+  .home .group-3 {
+    position: absolute;
+    width: 20px;
+    height: 21px;
+    top: 8px;
+    left: 8px;
+  }
+  
+  .home .auto-layout-vertical-10 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 600;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .text-wrapper-9 {
+    position: relative;
+    width: 99px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .p {
+    position: relative;
+    width: 136px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-dark-grey);
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .text-wrapper-10 {
+    position: relative;
+    width: 121px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .group-4 {
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    top: 8px;
+    left: 8px;
+  }
+  
+  .home .text-wrapper-11 {
+    position: relative;
+    width: 141px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .auto-layout-8 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+  }
+  
+  .home .group-5 {
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    top: 8px;
+    left: 11px;
+  }
+  
+  .home .auto-layout-9 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+  }
+  
+  .home .img-wrapper {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-color: var(--e-health-dashboard-1-secondary-light-grey);
+    border-radius: 8px;
+  }
+  
+  .home .group-6 {
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    top: 384px;
+    left: 23546px;
+  }
+  
+  .home .text-wrapper-12 {
+    position: relative;
+    width: 136px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 300;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .length {
+    height: 314px;
+    top: -11px;
+    left: 302px;
+    display: flex;
+    width: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 4px;
+    position: absolute;
+  }
+  
+  .home .rectangle-wrapper {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: var(--e-health-dashboard-1-secondary-light-grey);
+  }
+  
+  .home .rectangle {
+    width: 4px;
+    height: 153px;
+    background-color: var(--e-health-dashboard-1-secondary-secondary);
+    border-radius: 8px;
+  }
+  
+  .home .frame-2 {
+    position: absolute;
+    width: 437px;
+    height: 467px;
+    top: 356px;
+    left: 358px;
+    background-color: var(--e-health-dashboard-1-neutrals-base-white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+    box-shadow: var(--e-health-dashboard-card-shadow);
+  }
+  
+  .home .auto-layout-vertical-11 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+    position: relative;
+    top: 16px;
+    left: 24px;
+  }
+  
+  .home .auto-layout-10 {
+    display: inline-flex;
+    align-items: center;
+    gap: 96px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .text-wrapper-13 {
+    position: relative;
+    width: 274px;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .auto-layout-vertical-12 {
+    display: flex;
+    flex-direction: column;
+    width: 389px;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-vertical-13 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-11 {
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-12 {
+    display: flex;
+    width: 168px;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .dr-alfonso {
+    position: relative;
+    width: 77px;
+    margin-top: -2.00px;
+    margin-left: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    border-color: var(--e-health-dashboard-1-secondary-secondary);
+  }
+  
+  .home .line {
+    position: relative;
+    width: 1px;
+    height: 15px;
+  }
+  
+  .home .frame-3 {
+    position: relative;
+    width: 81px;
+    height: 11px;
+    margin-right: -0.11px;
+  }
+  
+  .home .text-wrapper-14 {
+    position: absolute;
+    width: 86px;
+    top: -4px;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 600;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 10.5px;
+    letter-spacing: -0.21px;
+    line-height: 18.0px;
+    white-space: nowrap;
+  }
+  
+  .home .auto-layout-vertical-14 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-vertical-15 {
+    display: flex;
+    flex-direction: column;
+    height: 252px;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 8px 0px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .home .auto-layout-13 {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 12px 40px 0px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--e-health-dashboard-1-neutrals-base-white);
+  }
+  
+  .home .auto-layout-14 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .state-default {
+    display: flex;
+    flex-direction: column;
+    width: 97px;
+    height: 28px;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .home .rectangle-2 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 4px;
+    background-color: var(--e-health-dashboard-1-neutrals-base-white);
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  .home .state-selected {
+    gap: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .auto-layout-15 {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 0px 12px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .text-wrapper-15 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 600;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .home .rectangle-3 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 4px;
+    background-color: var(--e-health-dashboard-1-primary-primary);
+    border-radius: 4px;
+  }
+  
+  .home .auto-layout-vertical-16 {
+    display: flex;
+    flex-direction: column;
+    width: 366px;
+    height: 59px;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .home .auto-layout-vertical-17 {
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    margin-bottom: -13.00px;
+  }
+  
+  .home .auto-layout-vertical-18 {
+    display: flex;
+    flex-direction: column;
+    height: 27px;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .home .text-wrapper-16 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-dark-grey);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+  
+  .home .auto-layout-vertical-19 {
+    display: flex;
+    width: 366px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .rectangle-4 {
+    position: relative;
+    width: 181px;
+    height: 17px;
+    background-color: var(--polar-green-4);
+    border-radius: 10px 0px 0px 10px;
+  }
+  
+  .home .rectangle-5 {
+    position: relative;
+    width: 185px;
+    height: 17px;
+    background-color: var(--dust-red-3);
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .home .text-wrapper-17 {
+    position: absolute;
+    top: 48px;
+    left: 82px;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 12px;
+    line-height: 21px;
+    white-space: nowrap;
+    font-family: "Open Sans", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .home .text-wrapper-18 {
+    position: absolute;
+    top: 48px;
+    left: 265px;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 12px;
+    line-height: 21px;
+    white-space: nowrap;
+    font-family: "Open Sans", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .home .auto-layout-vertical-20 {
+    display: flex;
+    flex-direction: column;
+    width: 366px;
+    height: 87px;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .home .auto-layout-vertical-21 {
+    display: flex;
+    flex-direction: column;
+    height: 42px;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .home .auto-layout-vertical-22 {
+    display: flex;
+    width: 366px;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: -2.00px;
+  }
+  
+  .home .rectangle-6 {
+    width: 252px;
+    border-radius: 10px 0px 0px 10px;
+    position: relative;
+    height: 17px;
+    background-color: var(--polar-green-4);
+  }
+  
+  .home .rectangle-7 {
+    position: relative;
+    width: 115px;
+    height: 17px;
+    margin-right: -1.00px;
+    background-color: var(--dust-red-3);
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .home .text-wrapper-19 {
+    position: absolute;
+    top: 46px;
+    left: 118px;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 12px;
+    line-height: 21px;
+    white-space: nowrap;
+    font-family: "Open Sans", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .home .text-wrapper-20 {
+    position: absolute;
+    top: 46px;
+    left: 301px;
+    font-weight: 400;
+    color: #00000080;
+    font-size: 12px;
+    line-height: 21px;
+    white-space: nowrap;
+    font-family: "Open Sans", Helvetica;
+    letter-spacing: 0;
+  }
+  
+  .home .auto-layout-vertical-23 {
+    display: flex;
+    flex-direction: column;
+    width: 366px;
+    height: 42px;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: -33.00px;
+  }
+  
+  .home .auto-layout-vertical-24 {
+    display: flex;
+    width: 366px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .rectangle-8 {
+    width: 24px;
+    border-radius: 10px;
+    position: relative;
+    height: 17px;
+    background-color: var(--polar-green-4);
+  }
+  
+  .home .rectangle-9 {
+    position: relative;
+    width: 35px;
+    height: 17px;
+    border-radius: 10px;
+  }
+  
+  .home .rectangle-10 {
+    position: relative;
+    width: 12px;
+    height: 17px;
+    border-radius: 10px;
+  }
+  
+  .home .rectangle-11 {
+    position: relative;
+    width: 24px;
+    height: 17px;
+    background-color: #ffa39e;
+    border-radius: 10px;
+  }
+  
+  .home .rectangle-12 {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    transform: rotate(180deg);
+  }
+  
+  .home .auto-layout-vertical-25 {
+    display: flex;
+    width: 366px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .rectangle-13 {
+    position: relative;
+    width: 29px;
+    height: 17px;
+    border-radius: 10px;
+  }
+  
+  .home .text-wrapper-21 {
+    position: absolute;
+    top: 0;
+    left: 215px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .text-wrapper-22 {
+    position: absolute;
+    top: 0;
+    left: 310px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .auto-layout-vertical-26 {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 27px;
+    margin-bottom: -19.00px;
+  }
+  
+  .home .group-7 {
+    position: absolute;
+    width: 833px;
+    height: 352px;
+    top: -16px;
+    left: -14px;
+  }
+  
+  .home .frame-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .frame-44{
+    position: relative;
+    width: 559px;
+    height: 815px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+    box-shadow: var(--shadow-xl);
+  }
+    
+  .home .rectangle-14 {
+    width: 4px;
+    height: 392px;
+    background-color: var(--e-health-dashboard-1-secondary-secondary);
+    border-radius: 8px;
+  }
+  
+  .home .text-wrapper-23 {
+    position: absolute;
+    height: 30px;
+    top: 13px;
+    left: 17px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .auto-layout-vertical-27 {
+    display: flex;
+    flex-direction: column;
+    width: 518px;
+    align-items: flex-start;
+    gap: 4px;
+    position: absolute;
+    top: 62px;
+    left: 17px;
+  }
+  
+  .home .auto-layout-16 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px 8px 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+  }
+  
+  .home .div-2 {
+    position: relative;
+    width: 276px;
+    height: 38px;
+  }
+  
+  .home .overlap-group-wrapper {
+    width: 280px;
+    height: 38px;
+  }
+  
+  .home .text-wrapper-24 {
+    position: absolute;
+    height: 22px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .element-march {
+    top: 21px;
+    position: absolute;
+    width: 172px;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-neutrals-neutrals600);
+    font-size: 12.3px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .type-primary-state {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 14px;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -1.00px;
+    margin-bottom: -1.00px;
+    margin-right: -2.00px;
+    background-color: var(--e-health-dashboard-1-primary-primary);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid;
+    box-shadow: var(--shadow-xs);
+    border-color: var(--e-health-dashboard-1-primary-primary);
+  }
+  
+  .home .clinical-record {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    margin-left: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 600;
+    color: var(--e-health-dashboard-1-neutrals-base-white);
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .home .group-8 {
+    position: relative;
+    width: 287px;
+    height: 36px;
+  }
+  
+  .home .group-9 {
+    position: relative;
+    width: 291px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-25 {
+    position: absolute;
+    width: 287px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .element-march-2 {
+    top: 19px;
+    position: absolute;
+    width: 172px;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-neutrals-neutrals600);
+    font-size: 12.3px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .clinical-record-wrapper {
+    display: inline-flex;
+    gap: 8px;
+    padding: 8px 14px;
+    flex: 0 0 auto;
+    margin-top: -2.00px;
+    margin-bottom: -2.00px;
+    margin-right: -2.00px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-xs);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--e-health-dashboard-1-primary-primary);
+    border: 1px solid;
+    border-color: var(--e-health-dashboard-1-primary-primary);
+  }
+  
+  .home .group-10 {
+    position: relative;
+    width: 369px;
+    height: 36px;
+  }
+  
+  .home .group-11 {
+    position: relative;
+    width: 373px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-26 {
+    position: absolute;
+    width: 369px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .group-12 {
+    position: relative;
+    width: 357px;
+    height: 36px;
+  }
+  
+  .home .group-13 {
+    position: relative;
+    width: 361px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-27 {
+    width: 357px;
+    position: absolute;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .group-14 {
+    position: relative;
+    width: 376px;
+    height: 36px;
+  }
+  
+  .home .group-15 {
+    position: relative;
+    width: 380px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-28 {
+    position: absolute;
+    width: 376px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .group-16 {
+    position: relative;
+    width: 399px;
+    height: 36px;
+  }
+  
+  .home .group-17 {
+    position: relative;
+    width: 403px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-29 {
+    position: absolute;
+    width: 399px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .group-18 {
+    position: relative;
+    width: 402px;
+    height: 36px;
+  }
+  
+  .home .group-19 {
+    position: relative;
+    width: 406px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-30 {
+    width: 402px;
+    position: absolute;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .group-20 {
+    position: relative;
+    width: 386px;
+    height: 36px;
+  }
+  
+  .home .group-21 {
+    position: relative;
+    width: 390px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-31 {
+    width: 386px;
+    position: absolute;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .group-22 {
+    position: relative;
+    width: 172px;
+    height: 36px;
+  }
+  
+  .home .group-23 {
+    position: relative;
+    width: 176px;
+    height: 36px;
+  }
+  
+  .home .text-wrapper-32 {
+    position: absolute;
+    width: 148px;
+    height: 19px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16.4px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .home .text-wrapper-33 {
+    position: absolute;
+    height: 30px;
+    top: 11px;
+    left: 427px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 700;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .home .auto-layout-17 {
+    display: flex;
+    width: 1435px;
+    height: 65px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--e-health-dashboard-1-neutrals-base-white);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--e-health-dashboard-1-secondary-light-grey);
+  }
+  
+  .home .auto-layout-18 {
+    display: flex;
+    height: 40px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 32px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+  
+  .home .auto-layout-19 {
+    display: flex;
+    width: 1193px;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 12px 40px 0px;
+    position: relative;
+    margin-bottom: -4.00px;
+    background-color: var(--e-health-dashboard-1-neutrals-base-white);
+  }
+  
+  .home .state-default-2 {
+    height: 28px;
+    gap: 12px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .home .text-wrapper-34 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Open Sans", Helvetica;
+    font-weight: 400;
+    color: var(--e-health-dashboard-1-secondary-secondary);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  
+  .home .auto-layout-20 {
+    display: flex;
+    width: 62px;
+    height: 40px;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+  }
+  
+  .home .search-wrapper {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--e-health-dashboard-1-primary-primary);
+    border: 1px solid;
+    border-color: var(--e-health-dashboard-1-primary-primary);
+  }
+  
+  .home .img-3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: -2.00px;
+    margin-bottom: -2.00px;
+    margin-left: -2.00px;
+    margin-right: -2.00px;
+  }
+  
+  .home .alert-wrapper {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    margin-right: -18.00px;
+    background-color: var(--e-health-dashboard-1-primary-primary);
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: var(--e-health-dashboard-1-primary-primary);
+  }
+  
+  .home .frame-5 {
+    position: relative;
+    align-self: stretch;
+    width: 36px;
+    border-radius: 20px;
+    background-image: url(https://c.animaapp.com/MTOLg2tQ/img/frame-1@2x.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  

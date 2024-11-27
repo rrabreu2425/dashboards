@@ -25,12 +25,9 @@ export function usePatientList(filterValues: ColumnFilterValue[], searchParams: 
     };
 
     const { resourceResponse, pagerManager, handleTableChange, pagination } = usePagerExtended<
-        typeof isSearchConsent extends true ? Consent | Patient : Patient,
-        ColumnFilterValue[]
-    >(isSearchConsent ? 'Consent' : 'Patient', { ...searchParams, ...defaultQueryParameters }, debouncedFilterValues);
+        typeof isSearchConsent extends true ? Consent | Patient : Patient, ColumnFilterValue[]>(isSearchConsent ? 'Consent' : 'Patient', { ...searchParams, ...defaultQueryParameters }, debouncedFilterValues);
 
     const patientsResponse = mapSuccess(resourceResponse, (bundle) => extractBundleResources(bundle).Patient);
-
     return {
         pagination,
         patientsResponse,

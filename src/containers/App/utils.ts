@@ -10,12 +10,7 @@ import { extractBundleResources, extractErrorCode, formatError } from '@beda.sof
 import { isFailure, isSuccess, RemoteDataResult, success } from '@beda.software/remote-data';
 
 import { getJitsiAuthToken, getUserInfo } from 'src/services/auth';
-import {
-    getFHIRResource,
-    getFHIRResources,
-    resetInstanceToken as resetFHIRInstanceToken,
-    setInstanceToken as setFHIRInstanceToken,
-} from 'src/services/fhir';
+import {getFHIRResource, getFHIRResources, resetInstanceToken as resetFHIRInstanceToken, setInstanceToken as setFHIRInstanceToken,} from 'src/services/fhir';
 import {
     sharedAuthorizedOrganization,
     sharedAuthorizedPatient,

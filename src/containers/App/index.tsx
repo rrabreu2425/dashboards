@@ -25,6 +25,8 @@ import { VideoCall } from 'src/containers/VideoCall';
 import { getToken, parseOAuthState, setToken } from 'src/services/auth';
 import { sharedAuthorizedPatient } from 'src/sharedState';
 import { Role, matchCurrentUserRole } from 'src/utils/role';
+import HomeAdmin from '../Home/Admin/index';
+import HomeProvider from '../Home/Provider/index';
 
 import { restoreUserSession } from './utils';
 import { AidboxFormsBuilder } from '../AidboxFormsBuilder';
@@ -45,6 +47,7 @@ export function App() {
     });
 
     const renderRoutes = (user: User | null) => {
+        
         if (user) {
             return matchCurrentUserRole({
                 [Role.Admin]: () => <AuthenticatedAdminUserApp />,
@@ -141,6 +144,7 @@ function AuthenticatedAdminUserApp() {
                         <Routes>
                             {/* TODO: in the current implementation admin will get all patients via /patients, but it's wrong */}
                             <Route path="/patients" element={<PatientList />} />
+                            <Route path="/home" element={<HomeAdmin/>} />
                             <Route path="/encounters" element={<EncounterList />} />
                             <Route path="/invoices" element={<InvoiceList />} />
                             <Route path="/invoices/:id" element={<InvoiceDetails />} />
@@ -179,6 +183,7 @@ function AuthenticatedPractitionerUserApp() {
                     <BaseLayout>
                         <Routes>
                             <Route path="/patients" element={<PatientList />} />
+                            <Route path="/home" element={<HomeProvider />} />
                             <Route path="/encounters" element={<EncounterList />} />
                             <Route path="/appointment/book" element={<PublicAppointment />} />
                             <Route path="/questionnaire" element={<PatientQuestionnaire />} />

@@ -96,18 +96,9 @@ export function InvoiceActions(props: InvoiceActionsProps) {
     );
 }
 
-export function getInvoiceTableColumns(
-    practitioners: Practitioner[],
-    practitionerRoles: PractitionerRole[],
-    patients: Patient[],
-    pagerManager: PagerManager,
-) {
-    const excludeColumnKeys = matchCurrentUserRole({
-        [Role.Admin]: () => ['patientActions'],
-        [Role.Patient]: () => ['patient', 'actions'],
-        [Role.Practitioner]: () => ['patientActions'],
-        [Role.Receptionist]: () => ['patientActions'],
-    });
+export function getInvoiceTableColumns(practitioners: Practitioner[], practitionerRoles: PractitionerRole[], patients: Patient[], pagerManager: PagerManager,) {
+    const excludeColumnKeys = matchCurrentUserRole({[Role.Admin]: () => ['patientActions'],[Role.Patient]: () => ['patient', 'actions'],[Role.Practitioner]: () => ['patientActions'],
+                                                    [Role.Receptionist]: () => ['patientActions'],});
 
     const tableColumns: ColumnsType<Invoice> = [
         {

@@ -1,0 +1,92 @@
+/* Estilo general del calendario */
+.rbc-calendar {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(0.90); /* Ajusta el tamaño general */
+   
+}
+
+/* Fondo de los días */
+.rbc-day-bg:hover {
+    background-color: #e6f7ff;
+    cursor: pointer; /* Cambia el cursor al pasar sobre los días */
+}
+
+/* Día actual */
+.rbc-today {
+    background-color: #d1e7dd;
+    border: 2px solid #3e82e9;
+}
+
+/* Eventos */
+.rbc-event {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
+/* Toolbar (encabezado) */
+.rbc-toolbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Botones de la toolbar */
+.rbc-btn-group button {
+    background-color: #7e8ea5;
+    color: white;
+    border: none;
+    margin: 0 4px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+/* Días fuera del rango del mes */
+.rbc-off-range-bg {
+    background-color: #f1f1f1;
+    color: #aaa;
+}
+.rbc-agenda-table tr:hover{
+    cursor: pointer; 
+    background-color: #f9f9f9; 
+    transition: background-color 0.3s ease; /* Suaviza los cambios de estilo */
+}
+.rbc-agenda-table{
+    background-color: #f0f0f0; /* Cambia a un gris claro */
+}
+
+.rbc-agenda-table td,
+.rbc-agenda-table th{
+    width: 25%; /* Ajusta el valor según el número de columnas */
+    text-align: left; /* Alineación del texto */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
+}
+
+
+/* Agrega un borde para separar visualmente */
+.rbc-agenda-table th,
+.rbc-agenda-table td {
+    border: 1px solid #ddd;
+}
+.button-container {
+    display: flex; 
+    gap: 3px;
+}
+
+.button-container button {
+    width: 90px;
+    
+}
+

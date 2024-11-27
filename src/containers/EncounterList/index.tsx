@@ -82,15 +82,6 @@ export function EncounterList() {
                             <Trans>Open</Trans>
                         </Link>
                     </Col>
-                    <Col>
-                        <Link
-                            to={`/encounters/${resource.id}/video`}
-                            state={{ encounterData: resource }}
-                            style={{ whiteSpace: 'nowrap' }}
-                        >
-                            <Trans>Video call</Trans>
-                        </Link>
-                    </Col>
                 </Row>
             ),
         },

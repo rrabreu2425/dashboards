@@ -21,12 +21,12 @@ export const S = {
         padding: 16px;
         background-color: ${({ theme }) => theme.antdTheme?.colorBgContainer};
         gap: 32px;
-        border-radius: 16px;
+        border-radius: 15px;
     `,
     Text: styled(Text)`
         margin: 0;
         font-weight: 700;
-        font-size: 19px;
+        font-size: 25px;
         line-height: 26px;
     `,
     Message: styled.div`

@@ -7,6 +7,7 @@ import { ColumnFilterValue } from 'src/components/SearchBar/types';
 import { getSearchBarFilterValue } from 'src/components/SearchBar/utils';
 import { usePagerExtended } from 'src/hooks/pager';
 import { useDebounce } from 'src/utils/debounce';
+import { restoreUserSession } from 'dist/containers/App/utils';
 
 export function useQuestionnaireList(filterValues: ColumnFilterValue[]) {
     const debouncedFilterValues = useDebounce(filterValues, 300);
@@ -17,14 +18,10 @@ export function useQuestionnaireList(filterValues: ColumnFilterValue[]) {
         _sort: '-_lastUpdated',
         name: questionnaireFilterValue,
     };
-
-    const { resourceResponse, pagerManager, handleTableChange, pagination } = usePagerExtended<
-        Questionnaire,
-        ColumnFilterValue[]
-    >('Questionnaire', queryParameters, debouncedFilterValues);
-
+    const { resourceResponse, pagerManager, handleTableChange, pagination } = usePagerExtended<Questionnaire, ColumnFilterValue[]>('Questionnaire', queryParameters, debouncedFilterValues);
+    
     const questionnaireListRD = mapSuccess(resourceResponse, (bundle) => extractBundleResources(bundle).Questionnaire);
-
+    console.log(questionnaireListRD)
     return {
         pagination,
         questionnaireListRD,

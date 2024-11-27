@@ -32,6 +32,7 @@ export function InvoiceList() {
         [Role.Practitioner]: () => getSelectedValue(selectedPatient),
         [Role.Receptionist]: () => getSelectedValue(selectedPatient),
     });
+ console.log(selectedPatient)
 
     const { invoiceResponse, pagination, handleTableChange, pagerManager } = useInvoicesList(
         getSelectedValue(selectedPractitionerRole),

@@ -132,6 +132,7 @@ export function useQuestionnaireResponseForm(props: Props) {
     const memoizedProps = useMemo(() => props, [JSON.stringify(props)]);
 
     const { response, handleSave } = useQuestionnaireResponseFormData(memoizedProps);
+
     const { onSuccess, onFailure, readOnly, initialQuestionnaireResponse, onCancel } = memoizedProps;
 
     const onSubmit = async (formData: QuestionnaireResponseFormData) => {

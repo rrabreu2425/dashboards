@@ -37,5 +37,5 @@ export function AidboxFormsBuilder() {
                 </RenderRemoteData>
             </S.Content>
         </S.Container>
-    );
+    )
 }

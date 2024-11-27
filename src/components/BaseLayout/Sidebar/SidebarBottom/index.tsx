@@ -93,7 +93,7 @@ function UserMenu(props: { onItemClick?: () => void }) {
 
     const userMenu = [
         {
-            label: t`Log out`,
+            label: t`Log Out`,
             key: 'logout',
             onClick: () => {
                 doLogout();
@@ -128,7 +128,7 @@ function UserMenu(props: { onItemClick?: () => void }) {
                 },
             ])}
         />
-    );
+    )
 }
 
 function PatientName() {
