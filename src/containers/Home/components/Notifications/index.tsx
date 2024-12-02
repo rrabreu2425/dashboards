@@ -1,21 +1,31 @@
 function Notifications() {
     return (<>
-        <div className='right'>
-            <div style={{ maxHeight: "220px", width: '220px', height: '250', marginLeft: '20px', borderRadius: '6px' }}>
-                <h3>Notifications</h3>
-                <table className="table table-striped">
-                     <tbody>
-                            <tr>
-                                <td>Notification 1</td>
-                                <td><div className='divCount'>View</div></td>
-                            </tr>
-                            <tr>
-                                <td>Notification 2</td>
-                                <td><div className='divCount'>View</div></td>
-                            </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div className='notifications'>
+
+            <h5 style={{ marginLeft: '20px' }}>Notifications</h5>
+            <ul className="listGroup-notifications">
+                <li className="list-notifications">
+                    <div className="ms-2 me-auto">
+                        <div className="fw-bold">Census Team: Boca Facility 10-23-24</div>
+                        18 March, 2023   |   09:00 PM
+                    </div>
+                    <div className="badge">View</div>
+                </li>
+                <li className="list-notifications">
+                    <div className="ms-2 me-auto">
+                        <div className="fw-bold">Census Team: South Facility 10-23-24</div>
+                        18 March, 2023   |   09:00 PM
+                    </div>
+                    <div className="badge">View</div>
+                </li>
+                <li className="list-notifications">
+                    <div className="ms-2 me-auto">
+                        <div className="fw-bold">Scribe: Completed Encounters Boca 10-22-24</div>
+                        18 March, 2023   |   09:00 PM
+                    </div>
+                    <div className="badge">View</div>
+                </li>
+            </ul>
         </div>
     </>)
 }

@@ -1,18 +1,16 @@
-import { Trans } from '@lingui/macro';
 import { BasePageContent, BasePageHeader } from 'src/components/BaseLayout';
+import { Trans } from '@lingui/macro';
 import { Title } from 'src/components/Typography';
-import BigCalendar from '../components/BigCalendar'
 import Notice from '../components/News/PreviewLinks';
-import MonthlySumary from '../components/MonthlySumaryAdmin';
+import PendingCensus from '../components/PendingCensus';
 import Notifications from '../components/Notifications';
-import Census from '../components/Census';
-import '../style.css'
-function HomeCensus() {
-  return (<>
-
+import MonthlySumaryScribe from '../components/MonthlySumaryScribe';
+import BigCalendar from '../components/BigCalendar'
+function HomeScribe(){
+    return(<>
     <BasePageHeader style={{ paddingTop: 35, paddingBottom: 10 }}>
       <Title style={{ marginBottom: 40 }}>
-        <Trans>Welcome Census Team Member!</Trans>
+        <Trans>Welcome Scriber Team Member!</Trans>
       </Title>
     </BasePageHeader>
 
@@ -21,14 +19,14 @@ function HomeCensus() {
       <div className="column column1">
         <div className="rectangulo1">
           <Notice />
-          <Census/>
+          <PendingCensus/>
         </div>
         <div className='containerDown'>
           <div className="rectangulo2">
-            <BigCalendar />
+            <BigCalendar/>
           </div>
           <div className="rectangulo3">
-          
+          <MonthlySumaryScribe/>
           </div>
         </div>
       </div>
@@ -38,8 +36,6 @@ function HomeCensus() {
         </div>
       </div>
     </div>
-
-  </>
-  )
+    </>)
 }
-export default HomeCensus  
+export default HomeScribe

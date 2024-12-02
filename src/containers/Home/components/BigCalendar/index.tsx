@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import NewTask from './Modals/NewTaskModal'
 import SelectOptionModal from './Modals/SelectOptionModal'
 import EditTask from './Modals/EditTaskModal';
-import {createTaskInAidbox, deleteEvent,fetchTasksFromAidbox, updateTask} from './hooks'
+import { createTaskInAidbox, deleteEvent, fetchTasksFromAidbox, updateTask } from './hooks'
 import { title } from 'process';
 
 //principal funcionality
@@ -40,22 +40,22 @@ const MyInteractiveCalendar = () => {
         setEvents(fetchedEvents);
     }
     const handleSelect = async () => {
-           const result= await createTaskInAidbox(newEvent);
-           const createdTask={id:result.id, title: result.description, start:result.executionPeriod.start, end: result.executionPeriod.end}
-            setEvents((prev) => [...prev, createdTask]);
-            setNewEvent({
-                title: '',
-                start: new Date(),
-                end: new Date(),
-            })
-            handleCloseModalNew()
+        const result = await createTaskInAidbox(newEvent);
+        const createdTask = { id: result.id, title: result.description, start: result.executionPeriod.start, end: result.executionPeriod.end }
+        setEvents((prev) => [...prev, createdTask]);
+        setNewEvent({
+            title: '',
+            start: new Date(),
+            end: new Date(),
+        })
+        handleCloseModalNew()
     }
 
 
     const handleEditEvent = async () => {
         await updateTask(selectedEvent)
         handleCloseModalEdit()
-        setEvents((prevEvents) => prevEvents.map((event) =>event.id === selectedEvent.id ? selectedEvent : event)
+        setEvents((prevEvents) => prevEvents.map((event) => event.id === selectedEvent.id ? selectedEvent : event)
         )
     }
 
@@ -75,17 +75,17 @@ const MyInteractiveCalendar = () => {
             setIsModalSelectOpen(false)
             setEvents(events.filter((evt) => evt.id !== selectedEvent.id));
             deleteEvent(selectedEvent.id);
-    }
+        }
     }
 
-       // Manejo del formulario para crear un evento
-       const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    // Manejo del formulario para crear un evento
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         if (selectedEvent) {
             setSelectedEvent({ ...selectedEvent, [e.target.name]: e.target.value });
         }
     }
 
-    const handleOpenModal = (slotInfo:any) => {
+    const handleOpenModal = (slotInfo: any) => {
         setNewEvent({
             title: '',
             start: slotInfo.start,
@@ -94,14 +94,14 @@ const MyInteractiveCalendar = () => {
         setIsModalNewOpen(true);
     }
     //Select Options
-    const handleSelectOptions = (event: Event) => {      
+    const handleSelectOptions = (event: Event) => {
         setSelectedEvent(event);
         setIsModalSelectOpen(true);
     }
 
 
     return (
-        <>
+        <> <div className="scroll-container-big-calendar">
             <Calendar
                 selectable
                 localizer={localizer}
@@ -111,9 +111,10 @@ const MyInteractiveCalendar = () => {
                 onSelectSlot={handleOpenModal}
                 onSelectEvent={handleSelectOptions}
             />
-            <NewTask isModalOpen={isModalNewOpen} handleCloseModalNew={handleCloseModalNew} newEvent={newEvent} setNewEvent={setNewEvent} handleSelect={handleSelect}/>
-            <SelectOptionModal isModalSelectOpen={isModalSelectOpen} setActionModalOpen={setIsModalSelectOpen} selectedEvent={selectedEvent} handleDeleteEvent={handleDeleteEvent} openEditModal={openEditModal} handleCloseModalOptions={handleCloseModalOptions}/>
-            <EditTask isModalOpenEdit={isModalEditOpen} handleCloseModalEdit={handleCloseModalEdit} handleEditEvent={handleEditEvent} selectedEvent={selectedEvent} handleInputChange={handleInputChange}/>
+            <NewTask isModalOpen={isModalNewOpen} handleCloseModalNew={handleCloseModalNew} newEvent={newEvent} setNewEvent={setNewEvent} handleSelect={handleSelect} />
+            <SelectOptionModal isModalSelectOpen={isModalSelectOpen} setActionModalOpen={setIsModalSelectOpen} selectedEvent={selectedEvent} handleDeleteEvent={handleDeleteEvent} openEditModal={openEditModal} handleCloseModalOptions={handleCloseModalOptions} />
+            <EditTask isModalOpenEdit={isModalEditOpen} handleCloseModalEdit={handleCloseModalEdit} handleEditEvent={handleEditEvent} selectedEvent={selectedEvent} handleInputChange={handleInputChange} />
+        </div>
         </>
     )
 }

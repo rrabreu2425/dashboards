@@ -6,6 +6,7 @@ import Notice from '../components/News/PreviewLinks';
 import MonthlySumary from '../components/MonthlySumaryProviders';
 import Notifications from '../components/Notifications';
 import AssignedPatients from '../components/AssignedPatients';
+import CalendarPicker from '../components/DatePicker';
 import '../style.css'
 function HomeProvider() {  
   
@@ -26,7 +27,7 @@ function HomeProvider() {
         </div>
         <div className='containerDown'>
           <div className="rectangulo2">
-            <BigCalendar />
+            
           </div>
           <div className="rectangulo3">
             <MonthlySumary />

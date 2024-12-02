@@ -17,13 +17,13 @@
 
 /* Día actual */
 .rbc-today {
-    background-color: #d1e7dd;
-    border: 2px solid #3e82e9;
+    background-color: #6194FA;
+    border: 2px solid #6194FA;
 }
 
 /* Eventos */
 .rbc-event {
-    background-color: #0d6efd;
+    background-color: #6194FA;
     color: white;
     border-radius: 4px;
     padding: 2px 4px;
@@ -37,18 +37,13 @@
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
-
-/* Botones de la toolbar */
 .rbc-btn-group button {
-    background-color: #7e8ea5;
-    color: white;
-    border: none;
-    margin: 0 4px;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
+    background-color: #6194FA;
+    font-size: 11px;
 }
+
+
+
 
 
 

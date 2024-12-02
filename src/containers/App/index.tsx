@@ -27,6 +27,8 @@ import { sharedAuthorizedPatient } from 'src/sharedState';
 import { Role, matchCurrentUserRole } from 'src/utils/role';
 import HomeAdmin from '../Home/Admin/index';
 import HomeProvider from '../Home/Provider/index';
+import HomeCensus from '../Home/Census';
+import HomeScribe from '../Home/Scriber';
 
 import { restoreUserSession } from './utils';
 import { AidboxFormsBuilder } from '../AidboxFormsBuilder';
@@ -47,7 +49,7 @@ export function App() {
     });
 
     const renderRoutes = (user: User | null) => {
-        
+
         if (user) {
             return matchCurrentUserRole({
                 [Role.Admin]: () => <AuthenticatedAdminUserApp />,
@@ -144,7 +146,7 @@ function AuthenticatedAdminUserApp() {
                         <Routes>
                             {/* TODO: in the current implementation admin will get all patients via /patients, but it's wrong */}
                             <Route path="/patients" element={<PatientList />} />
-                            <Route path="/home" element={<HomeAdmin/>} />
+                            <Route path="/home" element={<HomeAdmin />} />
                             <Route path="/encounters" element={<EncounterList />} />
                             <Route path="/invoices" element={<InvoiceList />} />
                             <Route path="/invoices/:id" element={<InvoiceDetails />} />
@@ -164,7 +166,7 @@ function AuthenticatedAdminUserApp() {
                             />
                             <Route path="/questionnaires/:id" element={<div>questionnaires/:id</div>} />
                             <Route path="/healthcare-services" element={<HealthcareServiceList />} />
-                            <Route path="*" element={<Navigate to="/encounters" />} />
+                            <Route path="*" element={<Navigate to="/home" />} />
                         </Routes>
                     </BaseLayout>
                 }
@@ -200,7 +202,7 @@ function AuthenticatedPractitionerUserApp() {
                                 element={<AidboxFormsBuilder />}
                             />
                             <Route path="/questionnaires/:id" element={<div>questionnaires/:id</div>} />
-                            <Route path="*" element={<Navigate to="/encounters" />} />
+                            <Route path="*" element={<Navigate to="/home" />} />
                         </Routes>
                     </BaseLayout>
                 }
@@ -218,12 +220,13 @@ function AuthenticatedReceptionistUserApp() {
                 element={
                     <BaseLayout>
                         <Routes>
+                            <Route path="/home" element={<HomeScribe/>} />
                             <Route path="/scheduling" element={<OrganizationScheduling />} />
                             <Route path="/invoices" element={<InvoiceList />} />
                             <Route path="/invoices/:id" element={<InvoiceDetails />} />
                             <Route path="/medications" element={<MedicationManagement />} />
                             <Route path="/prescriptions" element={<Prescriptions />} />
-                            <Route path="*" element={<Navigate to="/scheduling" />} />
+                            <Route path="*" element={<Navigate to="/home" />} />
                         </Routes>
                     </BaseLayout>
                 }
@@ -243,10 +246,11 @@ function AuthenticatedPatientUserApp() {
                 element={
                     <BaseLayout>
                         <Routes>
+                            <Route path="/home" element={<HomeCensus />} />
                             <Route path="/invoices" element={<InvoiceList />} />
                             <Route path="/invoices/:id" element={<InvoiceDetails />} />
                             <Route path={`/patients/:id/*`} element={<PatientDetails />} />
-                            <Route path="*" element={<Navigate to={`/patients/${patient!.id}`} />} />
+                            <Route path="*" element={<Navigate to={'/home'} />} />
                         </Routes>
                     </BaseLayout>
                 }

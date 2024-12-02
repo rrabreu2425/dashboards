@@ -86,14 +86,14 @@ function Notice() {
 
     return (<>
         <div className='containerBroadcast'>
-            {rol === 'admin' ? (<button type="button" onClick={handleOpenModalNewBroadcast} className="btn btn-primary" style={{ marginTop: '5%' }}>New Broadcast</button>):(<h4>Daily Read</h4>)}
+            {rol === 'admin' ? (<button type="button" onClick={handleOpenModalNewBroadcast} className="btn btn-primary" style={{ marginTop: '5%', backgroundColor:'#6194FA'}}>New Broadcast</button>):(<h5>Daily Read</h5>)}
 
             {(broadcast && !previewData) && (
                 <div className="border p-3 overflow-auto" style={{ maxHeight: "220px", width: '100%', borderRadius: '6px', marginTop: '8%' }}>
 
                     {broadcast.map((item: any) => (
                         <div style={{ width: '100%', borderRadius: '10px', maxWidth: '400px', textAlign: 'center' }}>
-                            <button type="button" onClick={() => handleDeleteBroadcast(item.id)} className="btn-close" aria-label="Close"></button>
+                            {rol === 'admin' &&(<button type="button" onClick={() => handleDeleteBroadcast(item.id)} className="btn-close" aria-label="Close"></button>)}
                             <img style={{ width: '200px', height: '140px', borderRadius: '10px' }} src={item.image} alt={item.title} />
                             <h6>{item.title}</h6>
                             <p style={{ overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' }}>{item.description}</p>

@@ -35,28 +35,15 @@ function Invoice() {
     }
     return (<>
         <div className='containerInvoice'>
-            <div style={{ maxHeight: "220px", width: '100%', height: '100%', marginLeft: '20%', borderRadius: '6px' }}>
-                <h3>Billing Sumary</h3>
-                <table className="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Status</th>
-                            <th scope="col">Count</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {billinSumary.map((item) => (
-                            <tr key={item.status}>
-
-                                <td>{capitalizeFirstLetter(item.status)}</td>
-
-                                <td><div className='divCount'>{item.count}</div></td>
-                            </tr>
-                        ))}
-
-                    </tbody>
-                </table>
-            </div>
+            <h5>Billing Summary</h5>
+            <ul className="listGroup">
+            {billinSumary.map((item) => (
+                <li className="list">
+                    <div className="fw-bold">{capitalizeFirstLetter(item.status)}</div>
+                    <div className="badge">{item.count}</div>
+                </li>
+                 ))}
+            </ul>
         </div>
     </>)
 }

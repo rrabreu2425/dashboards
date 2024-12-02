@@ -57,8 +57,11 @@ export function SidebarTop(props: Props) {
             { label: t`Patients`, path: '/patients', icon: <PatientsIcon /> },
             { label: t`Questionnaires`, path: '/questionnaires', icon: <QuestionnairesIcon /> },
         ],
-        [Role.Patient]: () => [{ label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> }],
+        [Role.Patient]: () => [ 
+            { label: t`Home`, path: '/home', icon: <IoHome /> },
+            { label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> }],
         [Role.Receptionist]: () => [
+            { label: t`Home`, path: '/home', icon: <IoHome /> },
             { label: t`Scheduling`, path: '/scheduling', icon: <EncountersIcon /> },
             { label: t`Invoices`, path: '/invoices', icon: <InvoicesIcon /> },
             { label: t`Medications`, path: '/medications', icon: <MedicationsIcon /> },

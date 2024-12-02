@@ -1,7 +1,7 @@
-function AssignedPatients() {
-    return (<>
-        <div className='containerInvoice'>
-            <h5>Assigned Patients</h5>
+function PendingCensus(){
+    return(<>
+    <div className='containerInvoice'>
+            <h5>Pending Census</h5>
             <ul className="listGroup">
                 <li className="list">
                     <div className="ms-2 me-auto">
@@ -15,17 +15,17 @@ function AssignedPatients() {
                         <div className="fw-bold">Fountain Manor</div>
                         10-12-2024
                     </div>
-                    <div className="badge">14</div>
+                    <div className="badge">12</div>
                 </li>
                 <li className="list">
                     <div className="ms-2 me-auto">
                         <div className="fw-bold">South Dade</div>
                         10-12-2024
                     </div>
-                    <div className="badge">18</div>
+                    <div className="badge">15</div>
                 </li>
             </ul>
         </div>
     </>)
 }
-export default AssignedPatients
+export default PendingCensus

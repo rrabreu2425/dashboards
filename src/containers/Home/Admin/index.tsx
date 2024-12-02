@@ -2,6 +2,7 @@ import { Trans } from '@lingui/macro';
 import { BasePageContent, BasePageHeader } from 'src/components/BaseLayout';
 import { Title } from 'src/components/Typography';
 import BigCalendar from '../components/BigCalendar'
+import CalendarComponent from '../components/Calendar';
 import Notice from '../components/News/PreviewLinks';
 import MonthlySumary from '../components/MonthlySumaryAdmin';
 import Notifications from '../components/Notifications';
@@ -25,7 +26,7 @@ function HomeAdmin() {
         </div>
         <div className='containerDown'>
           <div className="rectangulo2">
-            <BigCalendar />
+            <BigCalendar/>
           </div>
           <div className="rectangulo3">
             <MonthlySumary />
